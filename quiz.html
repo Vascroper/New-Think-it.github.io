@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>แบบทดสอบภาษาคอมพิวเตอร์</title>
+  <title>แบบทดสอบ</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -85,7 +85,7 @@
 </head>
 <body>
   <section>
-  <h1>แบบทดสอบเกี่ยวกับภาษาคอมพิวเตอร์</h1>
+  <h1>แบบทดสอบ</h1>
   <form id="quizForm">
     <div class="question">
       <p>1. ภาษาใดเป็นภาษาโปรแกรมเชิงวัตถุ?</p>
@@ -149,13 +149,43 @@
       <input type="radio" name="q10" value="1"> 1989<br>
       <input type="radio" name="q10" value="0"> 2007
     </div>
+    <div class="question">
+      <p>11. ข้อมูลประเภทใดไม่เป็นอักขระในภาษาซี</p>
+      <input type="radio" name="q11" value="0"> 'C'<br>
+      <input type="radio" name="q11" value="1"> "M"<br>
+      <input type="radio" name="q11" value="0"> '?'
+    </div>
+    <div class="question">
+      <p>12. การเลือกทำแบบทางเดียวควรใช้คำสั่งใด</p>
+      <input type="radio" name="q12" value="1"> if ไม่มี else<br>
+      <input type="radio" name="q12" value="0"> if แบบมี else<br>
+      <input type="radio" name="q12" value="0"> if..else และ switch
+    </div>
+    <div class="question">
+      <p>13. การเลือกทำแบบสองทางควรใช้คำสั่งใด</p>
+      <input type="radio" name="q13" value="0"> if ไม่มี else<br>
+      <input type="radio" name="q13" value="1"> if แบบมี else<br>
+      <input type="radio" name="q13" value="0"> if..else และ switch
+    </div>
+    <div class="question">
+      <p>14. .NET framework เป็นซอฟแวร์ไลบรารี่ที่พัฒนาโดยบริษัทใด</p>
+      <input type="radio" name="q14" value="0"> Adobe<br>
+      <input type="radio" name="q14" value="1"> Microsoft<br>
+      <input type="radio" name="q14" value="0"> Ubisoft
+    </div>
+    <div class="question">
+      <p>15. จุดเด่นหลักๆ ของภาษา C#</p>
+      <input type="radio" name="q15" value="0"> เป็นแพลตฟอร์มการเขียนโปรแกรม ซึ่งประกอบด้วยไลบรารีและ API ทั้งหมด<br>
+      <input type="radio" name="q15" value="0"> เป็นภาษาการเขียนโปรแกรมที่ใช้กันอย่างแพร่หลายสำหรับการเขียนโค้ดเว็บแอปพลิเคชัน<br>
+      <input type="radio" name="q15" value="1"> เป็นภาษาที่เน้นชิ้นส่วนโดยถูกออกแบบมาเป็นอย่างดีทำให้สามารถนำมาใช้ต่อกันเป็นอะไรก็ได้
+    </div>
     <button type="button" onclick="checkAnswers()">ตรวจคำตอบ</button>
   </form>
   <div class="result" id="result"></div>
 
   <script>
     function checkAnswers() {
-      const answers = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1,]; // ใส่คำตอบที่ถูกต้อง (value ของคำตอบที่ถูกต้อง)
+      const answers = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,]; // ใส่คำตอบที่ถูกต้อง (value ของคำตอบที่ถูกต้อง)
       let score = 0;
 
       answers.forEach((answer, index) => {
