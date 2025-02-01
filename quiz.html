@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แบบทดสอบ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('https://e0.pxfuel.com/wallpapers/141/585/desktop-wallpaper-virtuaverse-review-perfect-cyberpunk-is-pixel-art-mixed-with-synthwave.jpg'); /* เปลี่ยนภาพพื้นหลัง */
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #ac90ff;
+        }
+
+        header {
+            background-color: rgba(0 0 0 / 80%);
+            color: #6a329f;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(42, 42, 64, 0.8);
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #9d6cec;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #c747ee;
+            color: #1e1e2f;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            margin: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgba(70, 40, 77, 0.541);
+            color: #ae00ff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .button {
+            background-color: #64026d;
+            color: #ddddee;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #1e1e2f;
+            color: #b60ff8;
+        }
+  </style>
+</head>
+<body>
+  <section>
+  <h1>แบบทดสอบ</h1>
+  <form id="quizForm">
+    <div class="question">
+      <p>1. ภาษาใดเป็นภาษาโปรแกรมเชิงวัตถุ?</p>
+      <input type="radio" name="q1" value="0"> HTML<br>
+      <input type="radio" name="q1" value="1"> Java<br>
+      <input type="radio" name="q1" value="0"> CSS
+    </div>
+    <div class="question">
+      <p>2. คำสั่งใดใช้ในการแสดงผลใน Python?</p>
+      <input type="radio" name="q2" value="0"> echo<br>
+      <input type="radio" name="q2" value="1"> print<br>
+      <input type="radio" name="q2" value="0"> console.log
+    </div>
+    <!-- เพิ่มคำถามทั้งหมด 25 ข้อตรงนี้ -->
+    <!-- ตัวอย่างคำถาม -->
+    <div class="question">
+      <p>3. ภาษา C++ ถูกพัฒนามาจากภาษาใด?</p>
+      <input type="radio" name="q3" value="1"> C<br>
+      <input type="radio" name="q3" value="0"> Python<br>
+      <input type="radio" name="q3" value="0"> Java
+    </div>
+    <div class="question">
+      <p>4. ในการเขียนโปรแกรมภาษาซีจะต้องเก็บโปรแกรมต้นฉบับเป็นนามสกุลอะไร</p>
+      <input type="radio" name="q4" value="0"> .OBJ<br>
+      <input type="radio" name="q4" value="0"> .BAS<br>
+      <input type="radio" name="q4" value="1"> .C
+    </div>
+    <div class="question">
+      <p>5. คำว่าอะไรที่ทุกโปรแกรมในภาษาซีจะต้องมี</p>
+      <input type="radio" name="q5" value="1"> main<br>
+      <input type="radio" name="q5" value="0"> style<br>
+      <input type="radio" name="q5" value="0"> int
+    </div>
+    <div class="question">
+      <p>6. ซอฟต์แวร์ คืออะไร</p>
+      <input type="radio" name="q6" value="0"> อุปกรณ์ต่าง ๆ ที่ประกอบขึ้นเป็นเครื่องคอมพิวเตอร์<br>
+      <input type="radio" name="q6" value="1"> โปรแกรมหรือชุดคำสั่งที่ใช้สั่งงานเครื่องคอมพิวเตอร์<br>
+      <input type="radio" name="q6" value="0"> หน่วยประมวลผลกลางของคอมพิวเตอร์ เปรียบเสมือนสมองของมนุษย์
+    </div>
+    <div class="question">
+      <p>7. ซอฟต์แวร์ แบ่งออกเป็นกี่ประเภท</p>
+      <input type="radio" name="q7" value="0"> 1<br>
+      <input type="radio" name="q7" value="1"> 2<br>
+      <input type="radio" name="q7" value="0"> 3
+    </div>
+    <div class="question">
+      <p>8. โปรแกรมดูภาพยนตร์จัดว่าเป็นโปรแกรมประเภทใด</p>
+      <input type="radio" name="q8" value="0"> ซอฟต์แวร์ระบบ<br>
+      <input type="radio" name="q8" value="0"> ซอฟต์แวร์อรรถประโยชน์<br>
+      <input type="radio" name="q8" value="1"> ซอฟต์แวร์สำเร็จรูป
+    </div>
+    <div class="question">
+      <p>9. ข้อใดที่ไม่จำเป็นต้องมีในการเขียนโปรแกรม</p>
+      <input type="radio" name="q9" value="0"> #include<br>
+      <input type="radio" name="q9" value="1"> #define<br>
+      <input type="radio" name="q9" value="0"> main( )
+    </div>
+    <div class="question">
+      <p>10. Python ได้เริ่มสร้างขึ้นในปีใด</p>
+      <input type="radio" name="q10" value="0"> 1978<br>
+      <input type="radio" name="q10" value="1"> 1989<br>
+      <input type="radio" name="q10" value="0"> 2007
+    </div>
+    <div class="question">
+      <p>11. ข้อมูลประเภทใดไม่เป็นอักขระในภาษาซี</p>
+      <input type="radio" name="q11" value="0"> 'C'<br>
+      <input type="radio" name="q11" value="1"> "M"<br>
+      <input type="radio" name="q11" value="0"> '?'
+    </div>
+    <div class="question">
+      <p>12. การเลือกทำแบบทางเดียวควรใช้คำสั่งใด</p>
+      <input type="radio" name="q12" value="1"> if ไม่มี else<br>
+      <input type="radio" name="q12" value="0"> if แบบมี else<br>
+      <input type="radio" name="q12" value="0"> if..else และ switch
+    </div>
+    <div class="question">
+      <p>13. การเลือกทำแบบสองทางควรใช้คำสั่งใด</p>
+      <input type="radio" name="q13" value="0"> if ไม่มี else<br>
+      <input type="radio" name="q13" value="1"> if แบบมี else<br>
+      <input type="radio" name="q13" value="0"> if..else และ switch
+    </div>
+    <div class="question">
+      <p>14. .NET framework เป็นซอฟแวร์ไลบรารี่ที่พัฒนาโดยบริษัทใด</p>
+      <input type="radio" name="q14" value="0"> Adobe<br>
+      <input type="radio" name="q14" value="1"> Microsoft<br>
+      <input type="radio" name="q14" value="0"> Ubisoft
+    </div>
+    <div class="question">
+      <p>15. จุดเด่นหลักๆ ของภาษา C#</p>
+      <input type="radio" name="q15" value="0"> เป็นแพลตฟอร์มการเขียนโปรแกรม ซึ่งประกอบด้วยไลบรารีและ API ทั้งหมด<br>
+      <input type="radio" name="q15" value="0"> เป็นภาษาการเขียนโปรแกรมที่ใช้กันอย่างแพร่หลายสำหรับการเขียนโค้ดเว็บแอปพลิเคชัน<br>
+      <input type="radio" name="q15" value="1"> เป็นภาษาที่เน้นชิ้นส่วนโดยถูกออกแบบมาเป็นอย่างดีทำให้สามารถนำมาใช้ต่อกันเป็นอะไรก็ได้
+    </div>
+    <button type="button" onclick="checkAnswers()">ตรวจคำตอบ</button>
+  </form>
+  <div class="result" id="result"></div>
+
+  <script>
+    function checkAnswers() {
+      const answers = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,]; // ใส่คำตอบที่ถูกต้อง (value ของคำตอบที่ถูกต้อง)
+      let score = 0;
+
+      answers.forEach((answer, index) => {
+        const question = document.querySelector(`input[name="q${index + 1}"]:checked`);
+        if (question && parseInt(question.value) === answer) {
+          score++;
+        }
+      });
+
+      document.getElementById('result').innerText = `คุณได้คะแนน ${score} จาก ${answers.length}`;
+    }
+  </script>
+  </section>
+</body>
+</html>
+    
